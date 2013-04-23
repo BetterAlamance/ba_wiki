@@ -4,7 +4,7 @@
 }
 
 .tag_link {
-    background: url(../../img/tag-icon-small.png) no-repeat;
+    background: url("/static/theme/img/tag-icon-small.1bf45005531f.png") no-repeat;
     background-position: left center;
     padding-left: 18px;
     margin-left: 1px;
@@ -17,14 +17,14 @@
 }
 
 .file_unknown, a[href^='_files/'] {
-    background-image: url(../img/file_icons/document-block.png);
+    background-image: url("/static/theme/pages/img/file_icons/document-block.161b3530807c.png");
     background-repeat: no-repeat;
     background-position: left center;
     padding-left: 16px;
 }
 
 .file_pdf, a[href$='.pdf'], a[href$='.PDF'] {
-    background: url(../img/file_icons/document-pdf.png) no-repeat;
+    background: url("/static/theme/pages/img/file_icons/document-pdf.e755e27d0fbe.png") no-repeat;
     background-position: left center;
     padding-left: 16px;
 }
@@ -32,7 +32,7 @@
 .file_audio, a[href$='.mp3'], a[href$='.MP3'], a[href$='.wav'], a[href$='.WAV'],
 a[href$='.aif'], a[href$='.AIF'], a[href$='.aiff'], a[href$='.AIFF'],
 a[href$='.au'], a[href$='.AU'], a[href$='.mid'], a[href$='.MID'] {
-    background: url(../img/file_icons/document-music.png) no-repeat;
+    background: url("/static/theme/pages/img/file_icons/document-music.739f6e971abb.png") no-repeat;
     background-position: left center;
     padding-left: 16px;
 }
@@ -40,7 +40,7 @@ a[href$='.au'], a[href$='.AU'], a[href$='.mid'], a[href$='.MID'] {
 .file_video, a[href$='.mp4'], a[href$='.MP4'], a[href$='.mov'], a[href$='.MOV'],
 a[href$='.flv'], a[href$='.FLV'], a[href$='.avi'], a[href$='.AVI'],
 a[href$='.wmv'], a[href$='.WMV'] {
-    background: url(../img/file_icons/document-film.png) no-repeat;
+    background: url("/static/theme/pages/img/file_icons/document-film.2cfd2e9eac14.png") no-repeat;
     background-position: left center;
     padding-left: 16px;
 }
@@ -49,39 +49,39 @@ a[href$='.wmv'], a[href$='.WMV'] {
 .file_image, a[href$='.jpg'], a[href$='.JPG'], a[href$='.jpeg'],
 a[href$='.JPEG'], a[href$='.png'], a[href$='.PNG'], a[href$='.gif'],
 a[href$='.GIF'] {
-    background: url(../img/file_icons/document-image.png) no-repeat;
+    background: url("/static/theme/pages/img/file_icons/document-image.acca2b8efdb6.png") no-repeat;
     background-position: left center;
     padding-left: 16px;
 }
 
 .file_html, a[href$='.htm'], a[href$='.HTM'], a[href$='.html'],
 a[href$='.HTML'] {
-    background: url(../img/file_icons/document-globe.png) no-repeat;
+    background: url("/static/theme/pages/img/file_icons/document-globe.54f560e8a8f8.png") no-repeat;
     background-position: left center;
     padding-left: 16px;
 }
 
 .file_word, a[href$='.doc'], a[href$='.DOC'], a[href$='.docx'],
 a[href$='.DOCX'] {
-    background: url(../img/file_icons/document-word.png) no-repeat;
+    background: url("/static/theme/pages/img/file_icons/document-word.1d40b60dbc66.png") no-repeat;
     background-position: left center;
     padding-left: 16px;
 }
 
 .file_excel, a[href$='.xls'], a[href$='.XLS'] {
-    background: url(../img/file_icons/document-excel.png) no-repeat;
+    background: url("/static/theme/pages/img/file_icons/document-excel.70ab31c9fd16.png") no-repeat;
     background-position: left center;
     padding-left: 16px;
 }
 
 .file_powerpoint, a[href$='.ppt'], a[href$='.PPT'] {
-    background: url(../img/file_icons/document-powerpoint.png) no-repeat;
+    background: url("/static/theme/pages/img/file_icons/document-powerpoint.d7b830784910.png") no-repeat;
     background-position: left center;
     padding-left: 16px;
 }
 
 .file_text, a[href$='.txt'], a[href$='.TXT'] {
-    background: url(../img/file_icons/document-text.png) no-repeat;
+    background: url("/static/theme/pages/img/file_icons/document-text.20dec4d62ecc.png") no-repeat;
     background-position: left center;
     padding-left: 16px;
 }
@@ -134,26 +134,26 @@ a[href$='.DOCX'] {
 
 /* External links */
 a[href^='http:'], a[href^='https:'] {
-    background: url(../img/external_link.png) no-repeat;
+    background: url("/static/theme/pages/img/external_link.e40f7bdce2d1.png") no-repeat;
     background-position: left center;
     padding-left: 16px;
 }
 
 a[href^='http://www.facebook.com/'], a[href^='https://www.facebook.com/'] {
-    background: url(../img/facebook_link.png) no-repeat;
+    background: url("/static/theme/pages/img/facebook_link.2ec436e2ce2f.png") no-repeat;
     background-position: left center;
     padding-left: 16px;
 }
 
 a[href^='http://twitter.com/'], a[href^='https://twitter.com/'] {
-    background: url(../img/twitter_link.png) no-repeat;
+    background: url("/static/theme/pages/img/twitter_link.79a183dd6975.png") no-repeat;
     background-position: left center;
     padding-left: 16px;
 }
 
 /* Mailto links */
 a[href^='mailto:'] {
-    background: url(../img/email_link.png) no-repeat;
+    background: url("/static/theme/pages/img/email_link.ad47502004db.png") no-repeat;
     background-position: left center;
     padding-left: 16px;
 }
@@ -218,7 +218,7 @@ hr.selected {
     width: 180px;
     font-size: 15px;
     line-height: 30px;
-    background: #ffffff url(../../img/magnifying_glass.png) no-repeat 10px 10px;
+    background: #ffffff url("/static/theme/img/magnifying_glass.69dbcfa0f741.png") no-repeat 10px 10px;
     padding-left: 30px;
     margin-right: 0.5em;
     margin-bottom: 0.5em;
