@@ -1,0 +1,110 @@
+#page .welcome td {
+    display: block;
+    max-width: 1360px;
+    height: 280px;
+    background-image: url(/static/img/welcome.jpg);
+    background-position: 66% 0%;
+    background-repeat: no-repeat;
+    padding: 2em;
+    border: 3px solid #b5b5b5;
+}
+#page .welcome {
+    width: 100%;
+    border: none;
+}
+#page .welcome a {
+    text-decoration: none;
+}
+#page .welcome a:hover {
+    text-decoration: underline;
+}
+#page .welcome h1, #page .welcome h2, #page .welcome h3, #page .welcome h4 {
+    background-image: url(/static/img/80_trans_white_bg.png);
+    background-repeat: repeat;
+    width: auto;
+    float: right;
+    padding: 0 0.25em 0 0.25em;
+}
+#page .welcome h1 {
+    padding: 0.1em 0.25em 0.1em 0.25em;
+}
+#page .welcome h3 {
+    padding: 0.2em 0.3em 0.25em 0.3em;
+    margin-top: -1em;
+}
+#page .welcome .searchbox * {
+    vertical-align: middle;
+}
+#page .welcome .searchbox input {
+    margin-top: 0.4em;
+}
+
+/* *************************************** */
+/* headers   */
+/* *************************************** */
+
+#headertext {
+font-family: Arvo;
+color: #849199;
+font-size: 2em;
+text-transform: uppercase;
+letter-spacing: 0px;
+padding-top: 0px;
+line-height: 1;
+text-decoration: none;
+}
+
+#pageTitle {
+color: black;
+} 
+
+/* *************************************** */
+/* Custom styles used inside wiki pages    */
+/* *************************************** */
+.noborder, .noborder td {
+   border: none;
+}
+
+
+.front_page_regions {
+  width: 16em!important;
+  float: right;
+  margin-left: 2em;
+}
+.front_page_regions td {
+  padding: 1em 1em 0.5em 1.5em;
+  background-color: #ececec;
+}
+.front_page_regions a {
+  background: none!important;
+  padding: 0!important;
+}
+
+/*footer*/
+
+footer {
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    padding: 6px 15px;
+    background-color: #222222;
+    color: #999999;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+footer a {
+  float: none;
+  color: #999999;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+footer a:hover {
+  background-color: transparent;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer p {
+  font-size: small;
+}

@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
 
-  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
        Remove this if you use the .htaccess -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
@@ -13,24 +13,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <title>{% block title %}{% if current_site %}{{ current_site.name }}{% else %}Wiki{% endif %}{% endblock %}</title>
-  
+  <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   {% block search_robots %}
   <meta name="robots" content="index,follow">
   {% endblock %}
 
   {% block media %}
-      <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    
-    <link href="//fonts.googleapis.com/css?family=Cabin:regular,regularitalic,bold|Inconsolata|Arvo:700|PT+Sans" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="{% static "theme/css/font_face.css" %}">
-    <link rel="stylesheet" href="{% static "theme/css/reset.css" %}">
   <link rel="stylesheet" href="{{ STATIC_URL }}theme/fonts/sorts_mill_goudy/stylesheet.css">
   <link rel="stylesheet" href="{{ STATIC_URL }}theme/fonts/museo_300/stylesheet.css">
   <link rel="stylesheet" href="{{ STATIC_URL }}theme/fonts/museo_500/stylesheet.css">
   <link rel="stylesheet" href="{{ STATIC_URL }}theme/fonts/museo_700/stylesheet.css">
-  <link rel="stylesheet" href="{{ STATIC_URL }}css/ba_wiki.css?v=1">
   <link rel="stylesheet" href="{{ STATIC_URL }}theme/css/bootstrap.min.css">
   <link rel="stylesheet" href="{{ STATIC_URL }}theme/css/bootstrap-responsive.min.css">
   <link rel="stylesheet" href="{{ STATIC_URL }}theme/css/site.css">
@@ -39,27 +33,12 @@
   <script type="text/javascript" src="{{ STATIC_URL }}theme/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="{{ STATIC_URL }}theme/js/jquery.watermark.min.js"></script>
 
-<script>
+  <script>
   $(document).ready(function() {
+    $("form#nav-search input").watermark();
   });
   </script>
 
-  {% block analytics %}
-  {% if GOOGLE_ANALYTICS_ID %}
-  <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', '{{ GOOGLE_ANALYTICS_ID }}']);
-    _gaq.push(['_trackPageview']);
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  </script>
-  {% endif %}
-  {% endblock %}
-
-  {% block head_extra %}{% endblock %}
 </head>
 
 {% block body %}
@@ -80,6 +59,8 @@
           </div>
         </div>
       </div>
+
+
     </div>
 
     {% block main_wrapper %}
@@ -99,7 +80,7 @@
           {% block dialog %}{% endblock %}
         {% endblock %}
         </div>
-      
+
         {% block content_wrapper %}
         <div id="content_wrapper" class="container">
           <div id="content">
@@ -117,7 +98,7 @@
     <div id="footer" class="container">
       <div class="container">
         <div class="footer-inner">
-					<div id="powered_by" class="pull-right">
+					<div id="powered_by">
 						{% block powered_by %}
 						<a href="http://localwiki.org/"><img src="{% static "theme/img/powered_by_localwiki.png" %}"/></a>
 						{% endblock %}
@@ -136,7 +117,6 @@
 
   {% endblock %}
   </div>
-  
 </body>
 {% endblock %}
 </html>
